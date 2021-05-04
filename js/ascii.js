@@ -54,7 +54,6 @@
         if(counter >= frameArr.length){
             counter = 0;
         }else{
-            console.log(counter)
             document.getElementById("text-area").value = frameArr[counter];
             counter++;
         }
