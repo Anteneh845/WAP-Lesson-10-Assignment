@@ -53,7 +53,7 @@
         if(counter >= frameArray.length){
             counter = 0;
         }else{
-            document.getElementById("text-area").value = frameArr[counter];
+            document.getElementById("text-area").value = frameArray[counter];
             counter++;
         }
     }
