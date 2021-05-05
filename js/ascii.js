@@ -11,13 +11,12 @@
     var timerInterval;
     var delayMs = 250;
     var frames;
-    var frameArr;
+    var frameArray;
 
     function startAnimation() {
         var animation = document.getElementById("animation");
-
         frames = ANIMATIONS[animation.value];
-        frameArr = frames.split("=====\n");
+        frameArray = frames.split("=====\n");
         changeTurbo();
 
         changeSize();
@@ -51,7 +50,7 @@
     }
 
     function animation_callback(){
-        if(counter >= frameArr.length){
+        if(counter >= frameArray.length){
             counter = 0;
         }else{
             document.getElementById("text-area").value = frameArr[counter];
